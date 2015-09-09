@@ -1,0 +1,16 @@
+{% extends 'respite/base.html' %}
+
+{% block title %}Patient List | Respite{% endblock %}
+{% block pagename %}Patient List{% endblock %}
+
+{% block container %}
+	{% if patient_list %}
+		<ul>
+			{% for patient in patient_list %}
+				<li><a href="{% url 'patient_details' patient.id %}">{{ patient }}</a></li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<p>No patients are available.</p>
+	{% endif %}
+{% endblock %}

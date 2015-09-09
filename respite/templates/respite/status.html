@@ -1,0 +1,21 @@
+{% extends 'respite/base.html' %}
+
+{% block title %}Status | Respite{% endblock %}
+{% block pagename %}Status{% endblock %}
+
+{% block container %}
+    
+    <h3>Male bed status</h3>
+    {% if male_bed_vacancy_flag == False %}
+        <p>No male beds available</p>
+    {% else %}
+        <p>Male beds available</p>
+    {% endif %}
+
+    <h3>Feale bed status</h3>
+    {% if female_bed_vacancy_flag == False %}
+        <p>No female beds available</p>
+    {% else %}
+        <p>Female beds available</p>
+    {% endif %}
+{% endblock %}

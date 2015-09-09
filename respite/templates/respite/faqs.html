@@ -1,0 +1,15 @@
+{% extends 'respite/base.html' %}
+
+{% block title %}FAQs | Respite{% endblock %}
+{% block pagename %}FAQs{% endblock %}
+
+{% block container %}
+	{% if faq_list %}
+		{% for faq in faq_list %}
+			<h2 class="question">{{ faq.question_text }}</h2>
+			<p class="answer">{{ faq.answer_text }}</p>
+		{% endfor %}
+	{% else %}
+		<p>No faqs are available.</p>
+	{% endif %}
+{% endblock %}
