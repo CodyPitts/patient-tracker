@@ -11,15 +11,15 @@
 	<a class="logo" href="{% url 'homepage' %}">Respite</a>
 	<div id="nav">
 			<ul>
-				<li><a href="/faqs">FAQS</a></li>
-				<li><a href="/referral">Referral</a></li>
+				<li><a href="{% url 'faqs' %}">FAQS</a></li>
+				<li><a href="{% url 'referral' %}">Referral</a></li>
 				<li><a href="{% url 'patient_list' %}">Patients</a></li>
-				<li><a href="/status">Status</a></li>
-				<li><a href="/statistics">Statistics</a></li>
+				<li><a href="{% url 'status' %}">Status</a></li>
+				<li><a href="{% url 'statistics' %}">Statistics</a></li>
 				{% if user.is_authenticated %}
-					<li><a href="/logout/?next={{ request.path }}">Logout</a></li>
+					<li><a href="{% url 'logout' %}?next={{ request.path }}">Logout</a></li>
 				{% else %}
-					<li><a href="/login/?next={{ request.path }}">Login</a></li>
+					<li><a href="{% url 'login' %}?next={{ request.path }}">Login</a></li>
 				{% endif %}
 			</ul>
 		</div>
