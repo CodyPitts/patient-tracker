@@ -61,7 +61,7 @@ h1 {
     padding: 8px 15px;
     text-decoration: none;
     font-weight: bold;
-    border-left: 1px solid #ccc;
+    border-left: 1px solid #fff;
     color: #fff;
     background-color: #126bbe;
 }
@@ -71,8 +71,11 @@ h1 {
 }
 
 #nav li a:hover {
-    color: black;
-    background-color: #fff;
+    color: #00ffff;
+}
+
+#nav li a:active {
+    color: #6495ED;
 }
 
 body {
