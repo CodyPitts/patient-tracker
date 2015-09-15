@@ -64,8 +64,8 @@ h1 {
 	background-color: #126bbe;
 }
 
-#nav li:first-child a {
-	border-left: 1px solid #ccc;
+#nav li:last-child a {
+	border-left: none;
 }
 
 #nav li a:hover {
