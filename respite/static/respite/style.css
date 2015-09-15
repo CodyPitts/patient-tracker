@@ -29,8 +29,7 @@ h1 {
 }
 
 .logo:hover{
-    color: black;
-    background-color: #fff;
+    color: #00ffff;
 }
 
 #nav {
