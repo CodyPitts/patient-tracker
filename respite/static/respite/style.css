@@ -74,10 +74,6 @@ h1 {
     color: #00ffff;
 }
 
-#nav li a:active {
-    color: #6495ED;
-}
-
 body {
     background-color: #fff;
     margin: 0;
