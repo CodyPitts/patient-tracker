@@ -1,13 +1,13 @@
 h1 {
-	font-size: 48px;
-	font-family: 'Signika', sans-serif;
-	padding-top: 60px;
-	text-align: center;
-	margin: auto;
+    font-size: 48px;
+    font-family: 'Signika', sans-serif;
+    padding-top: 60px;
+    text-align: center;
+    margin: auto;
 }
 
 #banner {
-	background: #126bbe none repeat scroll 0 0;
+    background: #126bbe none repeat scroll 0 0;
     margin: 0;
     overflow: hidden;
     padding: 10px 0 6px;
@@ -16,81 +16,91 @@ h1 {
 }
 
 .logo {
-	margin-left: 0;
-	float: left;
-	font-family: 'Inder', sans-serif;
-	display: block;
-	background-color: #126bbe;
-	padding: 8px 15px;
-	color: #fff;
-	text-decoration: none;
+    margin-left: 0;
+    float: left;
+    font-family: 'Inder', sans-serif;
+    display: block;
+    background-color: #126bbe;
+    padding: 8px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-left: 1px solid #ccc;
+    color: #fff;
+    background-color: #126bbe;
 }
 
 .logo:hover{
-	color: black;
-	background-color: #fff;
+    color: black;
+    background-color: #fff;
 }
 
 #nav {
-	width: auto;
-	border-collapse: collapse;
-	border: none;
+    width: auto;
+    border-collapse: collapse;
+    border: none;
 }
 
 #nav ul {
-	float: right;
-	margin: auto;
+    float: right;
+    margin: auto;
 }
 
 #nav li {
-	float: left;
-	display: block;
-	margin: 0;
-	text-align: center;
-	background-color: #fff;
-	font-family: 'Inder', sans-serif;
-	line-height: 28px;
-	margin-bottom: 3px;
-	color: #666;
+    float: left;
+    display: block;
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+    font-family: 'Inder', sans-serif;
+    line-height: 28px;
+    margin-bottom: 3px;
+    color: #666;
 }
 
 #nav li a {
-	display: block;
-	padding: 8px 15px;
-	text-decoration: none;
-	font-weight: bold;
-	border-left: 1px solid #ccc;
-	color: #fff;
-	background-color: #126bbe;
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-left: 1px solid #ccc;
+    color: #fff;
+    background-color: #126bbe;
 }
 
 #nav li:first-child a {
-	border-left: none;
+    border-left: none;
 }
 
 #nav li a:hover {
-	color: black;
-	background-color: #fff;
+    color: black;
+    background-color: #fff;
 }
 
 body {
-	background-color: #fff;
-	margin: 0;
-	padding: 0;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 .question {
-	
+    
 }
 
 .answer {
-	
+    
 }
 
 .container {
-	max-width: 800px;
-	margin: 0 auto;
-	background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
 }
 
 
