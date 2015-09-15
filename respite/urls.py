@@ -47,10 +47,10 @@ urlpatterns = [
     ),
 
     url(
-    	regex = '^status/$',
+    	regex = '^occupancy/$',
     	view = views.StatusView.as_view(),
     	kwargs = {},
-    	name = 'status',
+    	name = 'occupancy',
     ),
 
     url(
