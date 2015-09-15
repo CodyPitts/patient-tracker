@@ -12,11 +12,11 @@
         <a class="logo" href="{% url 'homepage' %}">Respite</a>
             <div id="nav">
                 <ul>
-                    <li><a href="{% url 'faqs' %}">FAQS</a></li>
                     <li><a href="{% url 'referral' %}">Referral</a></li>
-                    <li><a href="{% url 'patient_list' %}">Patients</a></li>
-                    <li><a href="{% url 'status' %}">Status</a></li>
+                    <li><a href="{% url 'status' %}">Occupancy</a></li>
+                    <li><a href="{% url 'patient_list' %}">Patient List</a></li>
                     <li><a href="{% url 'statistics' %}">Statistics</a></li>
+                    <li><a href="{% url 'faqs' %}">FAQS</a></li>
                     {% if user.is_authenticated %}
                         <li><a href="{% url 'logout' %}?next={{ request.path }}">Logout</a></li>
                     {% else %}
