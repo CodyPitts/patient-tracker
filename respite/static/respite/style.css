@@ -19,21 +19,13 @@ h1 {
     margin-left: 0;
     float: left;
     font-family: 'Inder', sans-serif;
-    display: block;
-    background-color: #126bbe;
-    padding: 8px 15px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.logo a {
-    display: block;
-    padding: 8px 15px;
-    text-decoration: none;
     font-weight: bold;
-    border-left: 1px solid #ccc;
-    color: #fff;
+    display: block;
     background-color: #126bbe;
+    padding: 8px 15px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 28px;
 }
 
 .logo:hover{
