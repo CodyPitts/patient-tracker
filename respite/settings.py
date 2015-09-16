@@ -105,7 +105,7 @@ STATIC_URL = '/static/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 REFERRAL_EMAIL_RECIPIENTS = ['first@hoc.org','second@hoc.org']
 
-
+LOGIN_URL = '/login/'
 
 
 

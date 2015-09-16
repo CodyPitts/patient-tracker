@@ -6,7 +6,7 @@ h1 {
     margin: auto;
 }
 
-td { 
+td, th { 
     text-align: left;
     padding: 1em;
     vertical-align: top;
