@@ -4,13 +4,15 @@
 {% block pagename %}Patient List{% endblock %}
 
 {% block container %}
-	{% if patient_list %}
-		<ul>
-			{% for patient in patient_list %}
-				<li><a href="{% url 'patient_details' patient.id %}">{{ patient }}</a></li>
-			{% endfor %}
-		</ul>
-	{% else %}
-		<p>No patients are available.</p>
-	{% endif %}
+    {% if patient_list %}
+        <div id="patient-links">
+            <ul>
+                {% for patient in patient_list %}
+                    <p><a href="{% url 'patient_details' patient.id %}">{{ patient }}</a></p>
+                {% endfor %}
+            </ul>
+        </div>
+    {% else %}
+        <p>No patients are available.</p>
+    {% endif %}
 {% endblock %}

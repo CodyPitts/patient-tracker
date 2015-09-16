@@ -10,6 +10,12 @@ td, th {
     text-align: left;
     padding: 1em;
     vertical-align: top;
+    font-family: 'Signika', sans-serif;
+}
+
+#patient-links {
+    font-family: 'Signika', sans-serif;
+    text-decoration: none;
 }
 
 #banner {
@@ -81,11 +87,11 @@ body {
 }
 
 .question {
-    
+    font-family: 'Signika', sans-serif;
 }
 
 .answer {
-    
+    font-family: 'Signika', sans-serif;
 }
 
 .container {
@@ -93,7 +99,29 @@ body {
     margin: 0 auto;
 }
 
+.occupancy-title {
+    font-family: 'Signika', sans-serif;
+}
 
+.occupancy-details {
+    font-family: 'Signika', sans-serif;
+}
+
+.statistics-titles{
+    font-family: 'Signika', sans-serif;
+}
+
+.statistics-details{
+    font-family: 'Signika', sans-serif;
+}
+
+#patient-personal-info{
+    font-family: 'Signika', sans-serif;
+}
+
+#patient-visit-info{
+    font-family: 'Signika', sans-serif;
+}
 
 
 

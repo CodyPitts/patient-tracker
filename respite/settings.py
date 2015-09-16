@@ -25,8 +25,8 @@ SECRET_KEY = 'e21(n4b&44)iwdb)n&sh7b7ha4w_i2)ll&lukgy!ct^e(r9lc!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
 
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -112,7 +112,7 @@ LOGIN_URL = '/login/'
 
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+DATABASES['default'] =  dj_database_url.config(default='sqlite:////'+os.path.join(BASE_DIR, 'db.sqlite3'))
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -131,12 +131,7 @@ STATICFILES_DIRS = (
 )
 
 
-
-
-
-
-
-
-
-
-
+try:
+    from respite.local_settings import *
+except ImportError:
+    pass

@@ -4,24 +4,28 @@
 {% block pagename %}Patient Details{% endblock %}
 
 {% block container %}
-	<ul>
-		<li>NAME: {{ patient }}</li>
-		<li>INITIAL: {{ patient.initial }}</li>
-		<li>DOB: {{ patient.dob }}</li>
-		<li>SEX: {{ patient.sex }}</li>
-	</ul>
+    <div id="patient-personal-info">
+        <ul>
+            <li>NAME: {{ patient }}</li>
+            <li>INITIAL: {{ patient.initial }}</li>
+            <li>DOB: {{ patient.dob }}</li>
+            <li>SEX: {{ patient.sex }}</li>
+        </ul>
+    </div>
 
-	{% for visit in patient.visit_set.all %}
-		<ul>
-			<li>STAY REASON: {{ visit.stay_reason }}</li>
-			<li>START DATE: {{ visit.stay_start_date }}</li>
-			<li>END DATE: {{ visit.stay_end_date }}</li>
-			<li>LENGTH OF STAY (DAYS): {{ visit.length_of_stay }}</li>
-			<li>HOUSING STATUS: {{ visit.housing_status }}</li>
-			<li>EMPLOYMENT STATUS: {{ visit.employment_status }}</li>
-			<li>OTHER NOTES: {{ visit.other_notes }}</li>
-			<li>REFERRER: {{ visit.referrer }}</li>
-			<li>DISCHARGE: {{ visit.discharge }}</li>
-		</ul>
-	{% endfor %}
+    {% for visit in patient.visit_set.all %}
+        <div id="patient-visit-info">
+            <ul>
+                <li>STAY REASON: {{ visit.stay_reason }}</li>
+                <li>START DATE: {{ visit.stay_start_date }}</li>
+                <li>END DATE: {{ visit.stay_end_date }}</li>
+                <li>LENGTH OF STAY (DAYS): {{ visit.length_of_stay }}</li>
+                <li>HOUSING STATUS: {{ visit.housing_status }}</li>
+                <li>EMPLOYMENT STATUS: {{ visit.employment_status }}</li>
+                <li>OTHER NOTES: {{ visit.other_notes }}</li>
+                <li>REFERRER: {{ visit.referrer }}</li>
+                <li>DISCHARGE: {{ visit.discharge }}</li>
+            </ul>
+        </div>
+    {% endfor %}
 {% endblock %}

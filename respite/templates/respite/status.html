@@ -5,17 +5,17 @@
 
 {% block container %}
     
-    <h3>Male bed status</h3>
+    <h3 class="occupancy-title">Male bed occupancy</h3>
     {% if male_bed_vacancy_flag == False %}
-        <p>No male beds available</p>
+        <p class="occupancy-details">No male beds available</p>
     {% else %}
-        <p>Male beds available</p>
+        <p class="occupancy-details">Male beds available</p>
     {% endif %}
 
-    <h3>Female bed status</h3>
+    <h3 class="occupancy-title">Female bed occupancy</h3>
     {% if female_bed_vacancy_flag == False %}
-        <p>No female beds available</p>
+        <p class="occupancy-details">No female beds available</p>
     {% else %}
-        <p>Female beds available</p>
+        <p class="occupancy-details">Female beds available</p>
     {% endif %}
 {% endblock %}

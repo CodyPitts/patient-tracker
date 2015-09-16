@@ -5,24 +5,24 @@
 
 {% block container %}
     
-    <h3>Yearly total bednights</h3>
+    <h3 class="statistics-titles">Yearly total bednights</h3>
     {% for year, total in ytd_totals.items %}
         <ul>
-            <li>{{ year }}: {{ total }}</li>
+            <li class="statistics-details">{{ year }}: {{ total }}</li>
         </ul>
     {% endfor %}
 
-    <h3>Yearly total bednights (Male)</h3>
+    <h3 class="statistics-titles">Yearly total bednights (Male)</h3>
     {% for year, total in ytd_male.items %}
         <ul>
-            <li>{{ year }}: {{ total }}</li>
+            <li class="statistics-details">{{ year }}: {{ total }}</li>
         </ul>
     {% endfor %}
 
-    <h3>Yearly total bednights (Female)</h3>
+    <h3 class="statistics-titles">Yearly total bednights (Female)</h3>
     {% for year, total in ytd_female.items %}
         <ul>
-            <li>{{ year }}: {{ total }}</li>
+            <li class="statistics-details">{{ year }}: {{ total }}</li>
         </ul>
     {% endfor %}
 {% endblock %}
