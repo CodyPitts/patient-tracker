@@ -8,7 +8,7 @@
         <div id="patient-links">
             <ul>
                 {% for patient in patient_list %}
-                    <p><a href="{% url 'patient_details' patient.id %}">{{ patient }}</a></p>
+                    <li><a href="{% url 'patient_details' patient.id %}">{{ patient }}</a></li>
                 {% endfor %}
             </ul>
         </div>

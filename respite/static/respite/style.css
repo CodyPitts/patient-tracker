@@ -10,12 +10,7 @@ td, th {
     text-align: left;
     padding: 1em;
     vertical-align: top;
-    font-family: 'Signika', sans-serif;
-}
-
-#patient-links {
-    font-family: 'Signika', sans-serif;
-    text-decoration: none;
+    font: 200 18px/1.5 'Signika', sans-serif;
 }
 
 #banner {
@@ -99,28 +94,82 @@ body {
     margin: 0 auto;
 }
 
-.occupancy-title {
+.container h1 {
     font-family: 'Signika', sans-serif;
+}
+
+.occupancy-title {
+    font: 200 22px/1.5 'Signika', sans-serif;
+    font-weight: bold;
 }
 
 .occupancy-details {
-    font-family: 'Signika', sans-serif;
+    font: 200 18px/1.5 'Signika', sans-serif;
 }
 
-.statistics-titles{
-    font-family: 'Signika', sans-serif;
+.statistics-titles {
+    font: 200 22px/1.5 'Signika', sans-serif;
+    font-weight: bold;
 }
 
-.statistics-details{
-    font-family: 'Signika', sans-serif;
+.statistics-details {
+    font: 200 18px/1.5 'Signika', sans-serif;
 }
 
-#patient-personal-info{
-    font-family: 'Signika', sans-serif;
+#patient-personal-info {
+    font: 200 22px/1.5 'Signika', sans-serif;
+    font-weight: bold;
 }
 
-#patient-visit-info{
+#patient-personal-info li {
+    list-style-type: none;
+}
+
+#patient-visit-info {
+    font: 200 18px/1.5 'Signika', sans-serif;
+}
+#patient-visit-info ul {
+    list-style-type: none;
+}
+
+#patient-links {
+    text-decoration: none;
+}
+
+#patient-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#patient-links li {
+    font: 200 20px/1.5 'Signika', sans-serif;
+    border-bottom: 1px solid #ccc;
+}
+
+#patient-links li:last-child {
+    border: none;
+}
+
+#patient-links li a {
     font-family: 'Signika', sans-serif;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: auto;
+     
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease, color .3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease, color .3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease, color .3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease, color .3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease, color .3s ease;
+}
+
+#patient-links li a:hover {
+    font-size: 20px;
+    color: #fff;
+    background: #126bbe;
+    width: auto;
 }
 
 
